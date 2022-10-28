@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Movie Review</title>
+</head>
+<!-- Body -->
+
+<body>
+
+    <div class="container">
+        <!-- Page Heading -->
+        <h1 class="text-center page-heading">Fresh Figs</h1>
+
+        <!-- Search Bar 1 - Movie Titles -->
+        <div class="row justify-content-around mt-5"> 
+            <div class="col-6">
+                <!-- Input Group combines the search input and button in a combined class -->
+                <div class="input-group">
+                   <input type="search" id="searchInput" class="form-control rounded" placeholder="Search Movie Titles" aria-label="Search Movies">
+                   <button id="searchBtn" type="button" class="btn">Search Movie</button>
+                </div>
+            </div>
+        </div>
+        <!-- Search Bar 2 - Starring -->
+        <div class="row justify-content-around mt-4">
+            <div class="col-6">
+                <div class="input-group">
+                    <input type="search" id="searchStarring" class="form-control rounded" placeholder="Search Starring Actors" aria-label="Search Starring">
+                    <button id="searchBtn" type="button" class="btn">Search Stars</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Filter Strip -->
+        <div class="row justify-content-around filter-strip">
+            <!-- Filter 1 - Genre Select -->
+            <div class="col-3">
+                <select class="form-select" id="genreSelect">
+                    <option selected>Genre</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                </select>
+            </div>
+            <!-- Filter 2 - Starring -->
+            <div class="col-3">
+                <select class="form-select" id="starringSelect">
+                    <option selected>Starring</option>
+                    <option value="Daniel Kaluuya">Daniel Kaluuya</option>
+                    <option value="Keke Palmer">Keke Palmer</option>
+                    <option value="Brandon Perea">Brandon Perea</option>
+                    <option value="Adam Sandler">Adam Sandler</option> 
+                    <option value="Robert Pattinson">Robert Pattinson</option>
+                    <option value="Benny Safdie">Benny Safdie</option>
+                    <option value="Julia Fox">Julia Fox</option>
+                </select>
+            </div>
+            <!-- Filter 3 - Rating -->
+            <div class="col-3">
+                <select class="form-select" id="ratingSelect">
+                    <option selected>Ratings</option>
+                    <option value="PG">PG</option>
+                    <option value="R15">R15</option>
+                    <option value="M">M</option>
+                    <option value="R18">R18</option>
+                </select>
+            </div>
+        </div>
+        <!-- End of Filter Strip -->
+        <!-- Movie Card Output Container -->
+        <div class="row justify-content-around movie-output" id="movieOutput">
+            <!-- Card 1 -->
+
+            <!-- Card 2 -->
+
+            <!-- Card 3 -->
+
+
+        </div>
+        <!-- End of Movie Output Container -->
+    </div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#movieModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
